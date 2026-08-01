@@ -45,7 +45,7 @@ jobs:
 
       - name: Establish Tailscale Connection
         run: |
-          & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey=tskey-auth-ka4MBbKmX211CNTRL-uibV7hQE8qJYR3tmNnRhpJzqEMRF9ParA --hostname=gh-runner-$env:GITHUB_RUN_ID
+          & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey=tskey-auth-kZfZKLRSsM11CNTRL-C991z9n9PNXyUcVBehjnNXQp1ZK2RwVAX --hostname=gh-runner-$env:GITHUB_RUN_ID
           $tsIP = $null
           $retries = 0
           while (-not $tsIP -and $retries -lt 10) {
